@@ -1,0 +1,44 @@
+{
+    "compilerOptions": {
+        "target": "es2018",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "lib": [
+            "esnext",
+            "esnext.asynciterable",
+            "dom"
+        ],
+        "esModuleInterop": true,
+        "allowJs": true,
+        "sourceMap": true,
+        "strict": true,
+        "noEmit": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "skipLibCheck": true,
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ],
+            "@utils/*": [
+                "./src/utils/*"
+            ],
+        },
+        "types": [
+            "@types",
+            // 消除 require 警告
+            "node",
+            "jest"
+        ]
+    },
+    "include": [
+        // "index.ts",
+        // "lib.ts"
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
